@@ -1,0 +1,115 @@
+[debug] [2025-07-16T17:58:35.044Z] ----------------------------------------------------------------------
+[debug] [2025-07-16T17:58:35.050Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2025-07-16T17:58:35.051Z] CLI Version:   14.9.0
+[debug] [2025-07-16T17:58:35.051Z] Platform:      darwin
+[debug] [2025-07-16T17:58:35.051Z] Node Version:  v22.14.0
+[debug] [2025-07-16T17:58:35.051Z] Time:          Wed Jul 16 2025 10:58:35 GMT-0700 (Pacific Daylight Time)
+[debug] [2025-07-16T17:58:35.051Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-07-16T17:58:35.055Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-16T17:58:35.056Z] > authorizing via signed-in user (renma.team@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/nicomin/CODE/2025/renma3
+
+[info] 
+=== Account Setup
+[info] 
+[info] Which account do you want to use for this project? Choose an account or add a new one now
+[info] 
+[debug] [2025-07-16T17:59:07.267Z] setProjectAccount(/Users/nicomin/CODE/2025/renma3, renma.team@gmail.com)
+[info] 
+[info] ✔  Using account: renma.team@gmail.com 
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-07-16T17:59:10.643Z] Checked if tokens are valid: false, expires at: 1752636359856
+[debug] [2025-07-16T17:59:10.644Z] Checked if tokens are valid: false, expires at: 1752636359856
+[debug] [2025-07-16T17:59:10.645Z] > refreshing access token with scopes: []
+[debug] [2025-07-16T17:59:10.648Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-07-16T17:59:10.648Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-16T17:59:10.831Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-07-16T17:59:10.831Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-16T17:59:10.844Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-07-16T17:59:11.227Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-07-16T17:59:11.228Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project renma-2 (RENMA) 
+[info] 
+=== Firestore Setup
+[info] i  firestore: ensuring required API firestore.googleapis.com is enabled... 
+[debug] [2025-07-16T17:59:13.599Z] Checked if tokens are valid: true, expires at: 1752692349831
+[debug] [2025-07-16T17:59:13.599Z] Checked if tokens are valid: true, expires at: 1752692349831
+[debug] [2025-07-16T17:59:13.600Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/renma-2/databases [none]
+[debug] [2025-07-16T17:59:14.104Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/renma-2/databases 200
+[debug] [2025-07-16T17:59:14.105Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/renma-2/databases {"databases":[{"name":"projects/renma-2/databases/(default)","uid":"20e1ebcf-8a6f-42ff-af20-d74eb0ad525d","createTime":"2025-07-09T18:07:05.186617Z","updateTime":"2025-07-09T18:07:05.186617Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2025-07-16T16:59:14.121379Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","databaseEdition":"STANDARD","freeTier":true,"etag":"ILSuz7T6wY4DMLyv0o+vsI4D"}]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2025-07-16T17:59:16.202Z] Checked if tokens are valid: true, expires at: 1752692349831
+[debug] [2025-07-16T17:59:16.202Z] Checked if tokens are valid: true, expires at: 1752692349831
+[debug] [2025-07-16T17:59:16.203Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/renma-2/releases pageSize=10&pageToken=
+[debug] [2025-07-16T17:59:16.658Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/renma-2/releases 200
+[debug] [2025-07-16T17:59:16.658Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/renma-2/releases {"releases":[{"name":"projects/renma-2/releases/cloud.firestore","rulesetName":"projects/renma-2/rulesets/dd97626a-e8a1-4129-80b9-715f35fe9382","createTime":"2025-07-09T18:07:08.918666Z","updateTime":"2025-07-09T19:06:48.425482Z"}]}
+[debug] [2025-07-16T17:59:16.659Z] Checked if tokens are valid: true, expires at: 1752692349831
+[debug] [2025-07-16T17:59:16.659Z] Checked if tokens are valid: true, expires at: 1752692349831
+[debug] [2025-07-16T17:59:16.659Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/renma-2/rulesets/dd97626a-e8a1-4129-80b9-715f35fe9382 [none]
+[debug] [2025-07-16T17:59:16.955Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/renma-2/rulesets/dd97626a-e8a1-4129-80b9-715f35fe9382 200
+[debug] [2025-07-16T17:59:16.955Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/renma-2/rulesets/dd97626a-e8a1-4129-80b9-715f35fe9382 [omitted]
+[info] i  Downloaded the existing Firestore Security Rules from the Firebase console 
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2025-07-16T17:59:18.512Z] Checked if tokens are valid: true, expires at: 1752692349831
+[debug] [2025-07-16T17:59:18.513Z] Checked if tokens are valid: true, expires at: 1752692349831
+[debug] [2025-07-16T17:59:18.513Z] Checked if tokens are valid: true, expires at: 1752692349831
+[debug] [2025-07-16T17:59:18.513Z] Checked if tokens are valid: true, expires at: 1752692349831
+[debug] [2025-07-16T17:59:18.513Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/renma-2/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2025-07-16T17:59:18.514Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/renma-2/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2025-07-16T17:59:19.013Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/renma-2/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2025-07-16T17:59:19.013Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/renma-2/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/renma-2/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[debug] [2025-07-16T17:59:19.014Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/renma-2/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2025-07-16T17:59:19.014Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/renma-2/databases/(default)/collectionGroups/-/indexes {}
+[info] i  Downloaded the existing Firestore indexes from the Firebase console 
+[info] ✔  Wrote firestore.rules 
+[info] ✔  Wrote firestore.indexes.json 
+[info] 
+=== Functions Setup
+[debug] [2025-07-16T17:59:19.019Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-16T17:59:19.019Z] > authorizing via signed-in user (renma.team@gmail.com)
+[debug] [2025-07-16T17:59:19.019Z] [iam] checking project renma-2 for permissions ["firebase.projects.get"]
+[debug] [2025-07-16T17:59:19.020Z] Checked if tokens are valid: true, expires at: 1752692349831
+[debug] [2025-07-16T17:59:19.020Z] Checked if tokens are valid: true, expires at: 1752692349831
+[debug] [2025-07-16T17:59:19.020Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/renma-2:testIamPermissions [none]
+[debug] [2025-07-16T17:59:19.020Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/renma-2:testIamPermissions x-goog-quota-user=projects/renma-2
+[debug] [2025-07-16T17:59:19.020Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/renma-2:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-07-16T17:59:19.131Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/renma-2:testIamPermissions 200
+[debug] [2025-07-16T17:59:19.132Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/renma-2:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] ✔  Wrote functions/package.json 
+[info] ✔  Wrote functions/.eslintrc.js 
+[info] ✔  Wrote functions/index.js 
+[info] ✔  Wrote functions/.gitignore 
