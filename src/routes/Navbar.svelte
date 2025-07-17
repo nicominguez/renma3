@@ -30,7 +30,7 @@
 	});
 </script>
 
-<nav class="flex w-full items-center justify-between bg-white px-6 py-4 shadow dark:bg-gray-800">
+<nav class="flex w-full items-center justify-between bg-white px-6 py-4 shadow dark:bg-gray-800 relative z-10">
 	<div class="text-2xl font-extrabold text-indigo-700 dark:text-indigo-300">RENMA</div>
 	<div class="flex items-center space-x-4">
 		{#if user}
