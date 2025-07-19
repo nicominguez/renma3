@@ -32,10 +32,10 @@ A modern booking platform for real estate photography services, built with Svelt
 
 ```bash
 # Clone the repository
-git clone [https://github.com/YourUsername/your-repo-name.git](https://github.com/YourUsername/your-repo-name.git)
+git clone https://github.com/nicominguez/renma3.git
 
 # Navigate to the project directory
-cd your-repo-name
+cd renma3
 
 # Install dependencies
 npm install
