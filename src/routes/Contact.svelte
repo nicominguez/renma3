@@ -43,7 +43,6 @@
 <footer class="bg-white dark:bg-gray-800 w-full px-6 py-12">
 	<h2 id="contactTitle" class="text-2xl font-semibold mb-6 text-center">Contact Us</h2>
 	<form
-		id="contactForm"
 		class="max-w-md mx-auto flex flex-col gap-4"
 		on:submit|preventDefault={handleSubmit}
 	>
