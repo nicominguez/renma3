@@ -14,7 +14,7 @@
 	let notes = '';
 
 	// SvelteKit's form prop to receive data from server actions
-	export let form;
+	// TODO: export let form;
 
 	function nextStep() {
 		currentStep++;
@@ -25,18 +25,18 @@
 	}
 
 	// Reactive statement to transition to the confirmation screen on successful form submission
-	$: if (form?.success && currentStep === 2) {
-		currentStep = 3;
-	}
+	// $: if (form?.success && currentStep === 2) {
+	// 	currentStep = 3;
+	// }
 </script>
 
 <section class="px-6 py-16 bg-gray-50 dark:bg-gray-900">
 	{#if currentStep === 0}
 		<div class="flex flex-col items-center justify-center text-center">
-			<h2 class="text-4xl font-extrabold text-black mb-2">
+			<h2 class="text-4xl font-extrabold text-black mb-2 dark:text-indigo-300">
 				Real Estate Photography - Made Simple
 			</h2>
-			<p class="text-2xl font-bold text-black mb-8">
+			<p class="text-2xl font-bold text-black mb-8 dark:text-indigo-300">
 				Starting at 79$
 			</p>
 			<button
@@ -161,7 +161,7 @@
 							Submit Booking
 						</button>
 					</div>
-				{:else if currentStep === 3}
+				<!-- {:else if currentStep === 3}
 					<div class="text-center">
 						<h3 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-gray-200">Got it!</h3>
 						{#if form?.price !== undefined}
@@ -182,7 +182,7 @@
 								Calculating your price...
 							</p>
 						{/if}
-					</div>
+					</div> -->
 				{/if}
 			</form>
 		</div>

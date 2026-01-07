@@ -1,44 +1,38 @@
-# RENMA Real Estate Photoshoot Booking
+# sv
 
-A modern booking platform for real estate photography services, built with SvelteKit and Firebase.
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
----
+## Creating a project
 
-## ✨ Check out the live demo! ✨
+If you're seeing this, you've probably already done this step. Congrats!
 
-👉 [**Visit the RENMA Live Site Here!**](https://your-firebase-app-id.web.app) 👈
+```sh
+# create a new project in the current directory
+npx sv create
 
----
+# create a new project in my-app
+npx sv create my-app
+```
 
-## Features
+## Developing
 
-* User authentication with Google
-* Seamless booking form with form actions
-* Dynamic image gallery
-* (Add more features specific to your app)
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-## Screenshots
-
-![Booking Form Screenshot](path/to/your/screenshot-booking-form.png)
-*(Include a good screenshot of your booking form or main page)*
-
-## Tech Stack
-
-* **Frontend:** SvelteKit, Tailwind CSS
-* **Backend:** Firebase (Authentication, Firestore, Hosting)
-* **Language:** TypeScript
-
-## Installation
-
-```bash
-# Clone the repository
-git clone [https://github.com/YourUsername/your-repo-name.git](https://github.com/YourUsername/your-repo-name.git)
-
-# Navigate to the project directory
-cd your-repo-name
-
-# Install dependencies
-npm install
-
-# Run in development mode
+```sh
 npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```sh
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.

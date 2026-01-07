@@ -6,7 +6,7 @@
 
     <div class="grid gap-8 text-center md:grid-cols-3">
       <div class="cursor-pointer rounded-lg border border-gray-200 p-6 shadow-xl transition hover:shadow-xl dark:border-gray-700">
-        <div class="mb-4 text-4xl text-indigo-500">🗓️</div>
+        <div class="mb-4 text-4xl text-indigo-500 dark:text-indigo-300">🗓️</div>
         <h3 class="mb-2 text-xl font-semibold">1. Book Your Shoot</h3>
         <p class="text-gray-600 dark:text-gray-300">
           Easily select your preferred date and time for the photoshoot via our online booking form.
@@ -14,7 +14,7 @@
       </div>
 
       <div class="rounded-lg border border-gray-200 p-6 shadow-xl dark:border-gray-700">
-        <div class="mb-4 text-4xl text-indigo-500">📸</div>
+        <div class="mb-4 text-4xl text-indigo-500 dark:text-indigo-300">📸</div>
         <h3 class="mb-2 text-xl font-semibold">2. The Photoshoot</h3>
         <p class="text-gray-600 dark:text-gray-300">
           Our photographer captures your property's best angles using professional equipment.
@@ -22,7 +22,7 @@
       </div>
 
       <div class="rounded-lg border border-gray-200 p-6 shadow-xl dark:border-gray-700">
-        <div class="mb-4 text-4xl text-indigo-500">📦</div>
+        <div class="mb-4 text-4xl text-indigo-500 dark:text-indigo-300">📦</div>
         <h3 class="mb-2 text-xl font-semibold">3. Image Delivery</h3>
         <p class="text-gray-600 dark:text-gray-300">
           Within 48 hours, your beautifully edited images are delivered directly to you.
