@@ -8,7 +8,7 @@ A small SvelteKit frontend backed by Firebase services — Authentication, Cloud
 
 ## Quickstart
 1. Clone
-   - git clone https://github.com/nicominguez/renma3.git && cd renma
+   - git clone https://github.com/nicominguez/renma.git && cd renma
 2. Install npm
    - npm install
 3. Local dev
